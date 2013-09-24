@@ -1,0 +1,48 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin bodyshadow {
+	-moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 5px #888;
+}
+
+$bluish: #0067A1;
+$redish: #DB4327;
+	$student-color:$bluish;
+
+	body {
+		@include bodyshadow;
+		padding:4px;
+		width:80%;
+	}
+
+	body h1{
+	  background-color: $bluish;
+	  padding:10px;
+	  color: #fff;
+	  margin: 0;
+	}
+	td.name{
+		color: $student-color;
+	}
+	td{
+		text-align: center;
+		padding: 5px;
+	}
+	a{
+		color:#0B3641;
+		&:hover{
+			background-color:#fff;
+			color:#23C331;
+		}
+		&.destroy{
+			color:#DB4327;
+		}
+	}
+	div.curFocus{
+		background: #fdecb2;
+		@include bodyshadow;
+		width:250px;
+	}

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  given_name: MyString
+  middle_name: MyString
+  family_name: MyString
+  date_of_birth: 2013-09-01
+  grade_point_average: 9.99
+  start_date: 2013-09-01
+
+two:
+  given_name: MyString
+  middle_name: MyString
+  family_name: MyString
+  date_of_birth: 2013-09-01
+  grade_point_average: 9.99
+  start_date: 2013-09-01

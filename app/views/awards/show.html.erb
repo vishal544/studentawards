@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @award.name %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @award.year %>
+</p>
+
+<p>
+  <b>Student:</b>
+  <%= @award.student.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_award_path(@student, @award) %> |
+<%= link_to 'Back', student_awards_path(@student) %>

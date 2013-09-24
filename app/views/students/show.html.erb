@@ -1,0 +1,49 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Given name:</b>
+  <%= @student.given_name %>
+</p>
+
+<p>
+  <b>Middle name:</b>
+  <%= @student.middle_name %>
+</p>
+
+<p>
+  <b>Family name:</b>
+  <%= @student.family_name %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @student.date_of_birth %>
+</p>
+
+<p>
+  <b>Grade point average:</b>
+  <%= @student.grade_point_average %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @student.start_date %>
+</p>
+
+<p>
+  <b>Courses:</b>
+  <% if !@student.courses.empty? %>
+    <%= @student.courses.collect {|c| link_to(c.name, c)}.join(", ").html_safe %>
+  <% else %>
+    Not enrolled on any courses yet
+  <% end %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Courses', courses_student_path(@student) %> |
+<%= link_to 'Awards', student_awards_path(@student) %> |
+<%= link_to 'Back', students_path %>
